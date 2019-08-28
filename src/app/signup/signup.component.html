@@ -1,0 +1,36 @@
+<mat-toolbar>
+
+  <span>Register</span>
+</mat-toolbar>
+<mat-card class="my-card">
+   <mat-card-content>
+         <div class="container">
+               <div class="picture-container">
+                   <div class="picture">
+                           <img  [src]=image    />
+                       <input type="file" id="wizard-picture"  (change)="selectFile($event)" >
+                   <br>
+                   <button mat-raised-button color="warn" class="btn btn-success"  [disabled]="!selectedFiles" (click)="upload()">upload</button>
+               </div>
+               </div>
+           </div> 
+      <form class="my-form">
+                 
+         <mat-form-field class="full-width">
+            <mat-label>Username</mat-label>
+            <input  matInput  placeholder="Email" name="UserName" [(ngModel)]="user.userName">
+         </mat-form-field><br>
+         <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input  matInput  placeholder="Password" name="userPassword" [(ngModel)]="user.userPassword">
+         </mat-form-field><br>
+         <mat-form-field class="full-width">
+              <mat-label>confirm password</mat-label>
+              <input  matInput  placeholder="Password" name="password">
+           </mat-form-field>
+      </form>
+   </mat-card-content>
+   <mat-card-actions>
+      <button mat-raised-button (click)="createUser()" color="primary">signup</button>
+   </mat-card-actions>
+</mat-card>

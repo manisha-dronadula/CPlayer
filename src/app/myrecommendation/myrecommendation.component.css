@@ -1,0 +1,44 @@
+/* .navbar-brand {
+    color: #FF5722;
+} */
+.logo {
+    margin-right: 1em;
+}
+/* .user-action-link
+{
+    background: #FF5722;
+    padding: .3em .8em;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+} */
+
+
+
+#search {
+    margin: 3em;
+    /* color: whitesmoke; */
+}
+h2 {
+    font-weight: 700;
+}
+.card {
+    background: rgba(128,131,122,0.2);
+    box-shadow: 0 0 10px #80DEEA;
+    border: 0;
+    border-radius: 15px;
+    /* color: #fff; */
+    margin: 1em;
+    padding: 0;
+}
+
+.thumb {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.details {
+    padding: 1em;
+}
+

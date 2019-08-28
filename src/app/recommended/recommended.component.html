@@ -1,0 +1,36 @@
+<app-dashboard></app-dashboard>
+<!-- <form class="form-inline my-2 my-lg-0" [formGroup]="searchForm" (ngSubmit)="search()">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search by Player" value="" formControlName="searchbox">
+    <button class="btn btn-outline-success my-2 my-sm-0" value="search">Search</button>
+    <!-- <input id="searchbox" name="searchbox"> -->
+<!-- </form>  -->
+
+
+<!--search results section-->
+
+
+<p>recommended works!</p>
+<div class="card" *ngFor="let item of result">
+
+    <mat-card-header>
+        <mat-card-title>
+            Pid: {{item.id}}
+            <br>
+            Name: {{item.fullName}}
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        majorTeams: {{item.majorTeams}}
+        <br>
+        imageURL: {{item.imageURL}}
+        <br>
+        country: {{item.country}}
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-icon-button color="warn" (click)="unrecommend(item.id)"
+            aria-label="Example icon-button with a heart icon">
+            unrecommend
+        </button>
+    </mat-card-actions>
+</div>

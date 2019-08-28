@@ -1,0 +1,27 @@
+<mat-toolbar>
+
+    <span>update</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+              
+           <mat-form-field class="full-width">
+              <mat-label>Username</mat-label>
+              <input  matInput  placeholder="Email" name="UserName" [(ngModel)]="user.userName">
+           </mat-form-field><br>
+           <mat-form-field class="full-width">
+              <mat-label>Current Password</mat-label>
+              <input  matInput  placeholder="current Password" name="userPassword" >
+           </mat-form-field><br>
+           <mat-form-field class="full-width">
+                <mat-label>New Password</mat-label>
+                <input  matInput  placeholder="new Password" name="new password" [(ngModel)]="user.userPassword">
+             </mat-form-field>
+        </form>
+     </mat-card-content>
+     <mat-card-actions>
+        <button mat-raised-button (click)="updateUser()" color="primary">update</button>
+     </mat-card-actions>
+  </mat-card>
+  

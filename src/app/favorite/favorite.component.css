@@ -1,0 +1,26 @@
+#Favorite {
+    margin: 3em;
+    color: whitesmoke;
+}
+h2 {
+    font-weight: 700;
+}
+.card {
+    background: #26C6DA;
+    box-shadow: 0 0 10px #80DEEA;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    margin: 1em;
+    padding: 0;
+}
+
+.thumb {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.details {
+    padding: 1em;
+}

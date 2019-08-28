@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <img src="../assets/images/logo.png" width="20px" height="20px" class="logo"> -->
+    <a class="navbar-brand" href="#">CPlayer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <br>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/myrecommendation" routerLinkActive="active">My Recommendation</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="user-action d-flex justify-content-end">
+        <a class="user-action-link" (click)="logout()">Logout</a>
+        
+    </div>
+</nav>

@@ -1,0 +1,53 @@
+
+
+  <div class="split left">
+        <div class="centered">
+            <img src="../assets/images/logo.png" width="45px" height="45px" class="logo">
+            <br>
+                <h1>CPLAYER</h1>
+           
+            
+        </div>
+      </div>
+
+      
+
+      
+<div class="split right ">
+    <div class="centered">
+      
+        <div class="title-center">
+            <mat-toolbar color="primary" >
+              <span class="title-center">LOGIN</span>
+            </mat-toolbar>
+            <mat-card class="my-card">
+               <mat-card-content>
+                  <form class="my-form">
+                       
+                     <mat-form-field class="full-width">                  
+                        <mat-label>UserName</mat-label>
+                        <input  matInput  placeholder="UserName" name="UserName" [(ngModel)]="user.userName">
+                     </mat-form-field><br>
+                     <mat-form-field class="full-width">
+                        <mat-label>userPassword</mat-label>
+                        <input  matInput  placeholder="userPassword" name="userPassword" [(ngModel)]="user.userPassword" >
+                     </mat-form-field>
+                  </form>
+               </mat-card-content>
+               <mat-card-actions>
+                  <button mat-raised-button (click)="userlogin()" color="primary" style="margin:5px">Signin</button>
+                  <button mat-button><a routerLink="/signup" routerLinkAction="active">  Signup</a></button>
+               </mat-card-actions>
+            </mat-card>
+            </div>
+
+                    
+      
+    </div>
+  </div>
+
+
+ 
+
+
+
